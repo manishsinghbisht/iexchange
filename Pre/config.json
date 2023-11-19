@@ -1,0 +1,67 @@
+{
+  "AppInfo": {
+    "NAME": "Pre"
+  },
+  "DEFAULT": {
+    "DEBUG": "TRUE",
+    "DATAFOLDER": "../pre_process_data",
+    "FILE_YESTERDAY": "yesterday/FACETSampleYesterday.txt",
+    "FILE_TODAY": "today/FACETSampletoday.txt",
+    "FILE_DELTA": "today/delta.txt",
+    "FILE_OUTPUT": "today/foutput.txt",
+    "SECRET_KEY": "secret-key-of-myapp",
+    "ADMIN_NAME": "administrator",
+    "AWS_DEFAULT_REGION": "ap-northeast-2",
+    "MAX_IMAGE_SIZE": 5242880,
+    "CHUNK_SIZE": 10000000
+  },
+  "AddressColumnMap": {
+    "Data.AddressLine1": "Address1",
+    "Data.AddressLine2": "Address2",
+    "Data.AddressLine3": null,
+    "Data.AddressLine4": null,
+    "Data.AddressLine5": "County",
+    "Data.City": "City",
+    "Data.StateProvince": "State",
+    "Data.PostalCode": "Zip",
+    "Data.Country": "CountryName"
+  },
+  "AffilationColumns": {
+    "Column1": "FirstName",
+    "Column2": "LastName",
+    "Column3": "NPI",
+    "Column4": "Address1",
+    "Column5": "Address2",
+    "Column6": "City",
+    "Column7": "State",
+    "Column8": "Zip",
+    "Column9": "Specialty",
+    "Column10": "Network",
+    "Column11": "SubNetwork"
+  },
+  "PB_API_CONFIG": {
+    "CALL_API": "FALSE",
+    "API_URL": "http://localhost:31529/api/IExchange/IExchangeApiCall",
+    "MIN_CONFIDENCE_LEVEL": -1
+  },
+  "SqlServerConnections": {
+    "Server": "HP-PC\\MSSQLSERVER2019",
+    "Database": "ST-E1-DEV",
+    "User": "sa",
+    "Password": "123456",
+    "Trusted_Connection": "No",
+    "Server1": "192.168.2.145",
+    "Database1": "ST-E1-DEV",
+    "User1": "msb",
+    "Password1": "123456",
+    "Trusted_Connection1": "No"
+
+  },
+  "MongoConnections": {
+    "Client": "mongodb://localhost:27017",
+    "Database": "ST-E1-JSON-DEV",
+    "Client1": "mongodb://192.168.2.145:27017",
+    "Databas1e": "ST-E1-JSON-DEV"
+  }
+
+}

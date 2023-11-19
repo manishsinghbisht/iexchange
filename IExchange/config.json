@@ -1,0 +1,102 @@
+{
+  "AppInfo": {
+    "NAME": "iExchange"
+  },
+  "DEFAULT": {
+    "INPUTFILENAME1": "inputUCDFWF1.txt",
+    "INPUTFILETYPE1": "FWF",
+    "INPUTFILENAME2": "inputSample_PIPE.csv",
+    "INPUTFILETYPE2": "CSV",
+    "INPUTFILENAME3": "inputSampleCSV.txt",
+    "INPUTFILETYPE3": "CSV",
+    "INPUTFILENAME": "",
+    "INPUTFILETYPE": "",
+    "DELIMITER": "",
+    "DATAFOLDER": "iexchange_data",
+    "CHUNK_SIZE": 1000,
+    "SECRET_KEY": "secret-key-of-myapp",
+    "ADMIN_NAME": "administrator",
+    "AWS_DEFAULT_REGION": "ap-northeast-2",
+    "MAX_IMAGE_SIZE": 5242880,
+    "USE_RULECONFIG_FOR_MAPPING": "FALSE",
+    "RESET_MAPPINGS_DB": "FALSE",
+    "SUMMARY_LOGGING_ONLY": "TRUE",
+    "UPDATE_FINALOUTPUT_IN_DB": "FALSE",
+    "UPDATE_LOG_IN_DB": "FALSE",
+    "WRITE_FOUTPUT_JSON": "TRUE"
+  },
+  "API": {
+    "CALL_API": "FALSE",
+    "USE_TEST_JSON": "FALSE",
+    "API_URL": "http://localhost:31529/api/IExchange/IExchangeApiCall",
+    "IX_CACHE_INIT": "http://localhost:31529/api/IExchange/IExchangeApiCallCacheInit"
+  },
+  "INPUT_COLUMNHEAD_KEYS": {
+    "ProviderDemographics": [ "" ],
+    "ProviderSpeciality": [ "Provider Specialty", "Provider Specialty2" ],
+    "ProviderAlias": [ "Alias 1", "Alias 2" ],
+    "ProviderLicense": [ "License 1", "License 2" ]
+  },
+  "OUTPUT_COLUMNHEAD_KEY": {
+    "Practice": "TaxID",
+    "PracticeLocation": "TaxID",
+    "ProviderDemographics": "NPI",
+    "ProviderAlias": "FirstName",
+    "ProviderSpeciality": "TaxonomyCode",
+    "ProviderLicense": "LicenseNumber",
+    "ProviderLicenseStatusLog": "LicenseLogParent",
+    "ProviderAppointmentAssociation": "Association",
+    "ProviderCertification": "CertificationNo",
+    "ProviderCMECredit": "CMECreditCategoryName",
+    "ProviderCoveringCollaborating": "TaxonomyCode",
+    "ProviderEducationTraining": "Degree",
+    "ProviderHealth": "HealthType",
+    "ProviderHospitalPrivelege": "HospitalName",
+    "ProviderLanguages": "LanguageCode",
+    "ProviderMalPractice": "PrimaryInsuranceCarrier",
+    "ProviderOtherIdType": "OtherIdParent",
+    "PracticeOtherId": "TaxID",
+    "ProviderPracticeLocation": "TaxID",
+    "ProviderContractLine": "TaxID",
+    "ContractLineFeeSchedule": "TaxID",
+    "ProviderProfessionalLiability": "PolicyNumber",
+    "ProviderReference": "LastName",
+    "ProviderEmploymentHistory": "EmployerName",
+    "PracticeBillingLocation": "TaxID",
+    "PracticeMailingLocation": "TaxID",
+    "ProviderPracticeLocationOtherId": "PPLOtherIDParent",
+    "PracticeLocationSiteService": "SiteServiceParent",
+    "ContractLineOtherId": "OtherIdNumber",
+    "ContractLineAddOns": "CLAddonParentId",
+    "ContractLineBillingLocation": "TaxID",
+    "ContractLineMailingLocation": "TaxID",
+    "PracticeLocationOtherId": "TaxID",
+    "ProviderSanction": "SanctionParent",
+    "PracticeAlias": "TaxID",
+    "PracticeLocationAlias": "TaxID",
+    "AffiliationLineContract": "TaxID",
+    "ProviderGroupNPI": "TaxID",
+    "PracticeTaxLocation": "TaxID",
+    "ContractLineBillingOtherId": "ContractLineBillingAddressId",
+    "PracticeGroupNPI": "TaxID",
+    "ProviderStatus": "TaxID",
+    "Exclusion": "TaxID",
+    "PracticeLocationSiteService": "SYSKEY",
+    "AddOns": "SYSKEY"
+  },
+  "TEST": {
+    "TEST_TMP_DIR": "tests",
+    "TEST_TIMEOUT": 20
+  },
+  "CI": {
+    "SERVICE": "travis-ci",
+    "HOOK_URL": "web-hooking-url-from-ci-service"
+  },
+  "MongoConnections": {
+    "Client1": "mongodb://10.109.181.39",
+    "Database1": "caresource",
+    "Client": "mongodb://localhost:27017",
+    "Database": "ST-E1-JSON-DEV"
+  }
+
+}

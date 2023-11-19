@@ -1,0 +1,5 @@
+recursive-include root/ *.py *.png *.sh
+include *.json
+include *.config
+include *.txt
+include *.py

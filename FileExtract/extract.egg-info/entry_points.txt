@@ -1,0 +1,3 @@
+[console_scripts]
+extract = root.__main__:main
+

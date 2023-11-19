@@ -1,0 +1,80 @@
+{
+  "AppInfo": {
+    "NAME": "Extract"
+  },
+  "DEFAULT": {
+    "DEBUG": "TRUE",
+    "USE_SAMPLE_REQUEST": "TRUE",
+    "EXECUTE_SP": "FALSE",
+    "RULE_CONFIG_STD": "ruleConfig_std_prod.json",
+    "RULE_CONFIG_PVT": "ruleConfig_pvt_prod.json",
+    "DATAFOLDER": "file_extract_data",
+    "SECRET_KEY": "secret-key-of-myapp",
+    "ADMIN_NAME": "administrator",
+    "AWS_DEFAULT_REGION": "ap-northeast-2",
+    "MAX_IMAGE_SIZE": 5242880,
+    "CHUNK_SIZE": 100,
+    "SUMMARY_LOGGING_ONLY": "TRUE",
+    "WRITE_FOUTPUT_JSON": "TRUE",
+    "MATCH_JSON_SCHEMA": "FALSE"
+  },
+  "EXTRACT_FILES": {
+    "LOG_MAP_ERRORS": false,
+    "WRITE_JSON": true,
+    "WRITE_XML": false,
+    "XML_TEMPLATE": "data_template_tag.xml",
+    "WRITE_CSV": true,
+    "CSV_TEMPLATE": "data_template_tag.csv",
+    "WRITE_FWF": false,
+    "FWF_TEMPLATE": "data_template_tag.fwf"
+  },
+  "OUTPUT_COLUMNHEAD_KEY": {
+    "ProviderDemographics": "NPI",
+    "ProviderOtherIdType": "OtherIdNumber",
+    "ProviderEducationTraining": "InstitutionName",
+    "ProviderSanction": "RegistrationNumber",
+    "HospitalPrivileges": "HospitalName",
+    "ProviderSpecialty": "TaxonomyCode",
+    "AdditionalSpecialties": "TaxonomyCode",
+    "ProviderLicense": "LicenseNumber",
+    "ProviderLicensesFederal": "LicenseNumber",
+    "ProviderLanguages": "Language",
+    "ProviderGroupNPI": "NPINumber",
+    "PracticeLocation": "TaxId",
+    "PracticeAddressContactDetails": "ContactType",
+    "ProviderPracticeLocationWorkHours": "WeekDayName",
+    "PracticeLocationSiteService": "ServiceName",
+    "PracticeLocationOtherID": "OtherIdNumber",
+    "PracticeTaxAddress": "Address1",
+    "ProviderPracticeLocationOtherId": "OtherIdNumber",
+    "AffiliationLine": "TaxId",
+    "AffiliationLineOtherID": "OtherIdNumber",
+    "AddOnSiteService": "ServiceName",
+    "AffiliationLineFeeSchedule": "FeeScheduleCode",
+    "Exclusion": "PayorName"
+  },
+  "API": {
+    "CALL_API": "FALSE",
+    "API_URL": "http://localhost:31529/api/IExchange/IExchangeApiCall"
+  },
+  "SqlServerConnections": {
+    "Server": "HP-PC\\MSSQLSERVER2019",
+    "Database": "ST-E1-DEV",
+    "User": "sa",
+    "Password": "123456",
+    "Trusted_Connection": "No",
+    "Server1": "192.168.2.145",
+    "Database1": "ST-E1-DEV",
+    "User1": "msb",
+    "Password1": "123456",
+    "Trusted_Connection1": "No"
+
+  },
+  "MongoConnections": {
+    "Client": "mongodb://localhost:27017",
+    "Database": "ST-E1-JSON-DEV",
+    "Client1": "mongodb://192.168.2.145:27017",
+    "Databas1e": "ST-E1-JSON-DEV"
+  }
+
+}

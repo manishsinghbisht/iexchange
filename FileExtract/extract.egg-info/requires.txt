@@ -1,0 +1,16 @@
+jsonmerge
+jsonschema
+logzero
+matplotlib
+numpy
+pandas
+pip
+pymongo
+pyodbc
+python-dateutil
+requests
+dicttoxml
+setuptools
+urllib3
+uuid
+cx_freeze

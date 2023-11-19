@@ -1,0 +1,32 @@
+{ 
+    "_id" : ObjectId("5e4beb65181a7e2b788e4f5d"), 
+    "Files" : [
+        {
+            "Id" : "58f5a096-5810-ea11-81e3-0631a9f233d0", 
+            "Name" : "Providers_Practitioner.csv", 
+            "TYPE" : "CSV", 
+            "DELIMITER" : "|", 
+            "COLWIDTHS" : "", 
+            "COLNAMES" : "ProviderID,SantechProviderID,ProviderCategory,ProviderLastName,ProviderFirstName,ProviderSSN,ProviderDOB,Gender,Specialty,BoardStatus,IndividualNPI,LicenseNumber,LicenseType,LicenseState,LicenseCountry,LicEffDate,LicExpDate,CAQHNumber,CAQHNumberStartDate,CAQHNumberEndDate,MiddleName,Suffix,Prefix,Degree,Language,SantechPracticeID,TaxID,TaxType,PracticeName,Additional NPI,OfficeName,LocationID,Address1,Address2,City,State,Zip,County,CountryCode,CountryName,LocationURL,DBA Name,DBANamePurpose,OfficeLocationPhone,OfficeLocationPhoneExt,OfficeLocationFax,OfficeLocationExt,OfficeLocationEmail,PublicTransportationAcceptable,EveningHours,HandicapAccessible,WeekendHours,AfterHoursCare,Mon_Start,Mon_End,Tue_Start,Tue_End,Wed_Start,Wed_End,Thu_Start,Thu_End,Fri_Start,Fri_End,Sat_Start,Sat_End,Sun_Start,Sun_End,BillingAddress1,BillingAddress2,BillingCity,BillingState,BillingZip,BillingPhone,BillingFax,BillingCountryCode,BillingCountryName,Network,Sub-Network,DirectoryIndicator,AcceptingNewPatient,AcceptingNewPatientEffDate,AcceptingNewPatientTermDate,ProviderNetworkEffDate,ProviderNetworkTermDate,ProviderNetworkBillingEffDate,ProviderNetworkBillingTermDate,DirectoryVerificationDate,FeeScheduleName,PrvFeeScheduleEffDate,PrvFeeScheduleTermDate,Affiliation line Other ID,Provider Practice Location Start Date,Provider Practice Location End Date,ContractID,EntityRelationStartDate,EntityRelationEndDate,PractitionerID", 
+            "OrderNo" : NumberInt(1), 
+            "IsHeader" : true, 
+            "Serial" : NumberInt(1), 
+            "FileRequestStatus" : "Completed", 
+            "CreatedDate" : "2/18/2020 1:49:25 PM", 
+            "StartDate" : "2020-02-20 13:44:10.120533", 
+            "EndDate" : "2020-02-22 14:29:46.003506"
+        }
+    ], 
+    "SourceSetupId" : "8a7fe130-5810-ea11-81e3-0631a9f233d0", 
+    "InputFileLocation" : "E:\\Caresource\\Rosters\\Facetes-Individual\\Input", 
+    "SourceRequestStatus" : "Completed", 
+    "RequestStatusLog" : [
+        "Queued"
+    ], 
+    "IsActive" : true, 
+    "CreatedDate" : "2/18/2020 1:49:25 PM", 
+    "StartDate" : "2020-02-20 13:44:10.061516", 
+    "EndDate" : "2020-02-22 14:29:46.006498", 
+    "Client" : "", 
+    "Description" : ""
+}

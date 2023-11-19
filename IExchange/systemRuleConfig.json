@@ -1,0 +1,20 @@
+[
+  {
+    "RuleKey": "Rule_IXTimeStamp",
+    "InputColumn": "",
+    "InputColumnHead": "",
+    "OutputColumn": "IXTimeStamp",
+    "OutputColumnHead": "",
+    "DefaultValue": "",
+    "RuleType": "IXTimeStamp",
+    "RuleSection": "1",
+    "RuleSeqNo": "1",
+    "ErrorOverrideWithDefaultValue": true,
+    "IsActive": true,
+    "IsGeneral": true,
+    "Client": "If not general, name the client ",
+    "Description": "IX Time stamp for lot",
+    "Author": "Manish",
+    "CreatedDate": "2018/12/25"
+  }
+]

@@ -1,0 +1,76 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Research", "Research\Research.pyproj", "{99E77018-F6EB-452C-9D3F-0DA2C99EE9A0}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "iExchange", "IExchange\iExchange.pyproj", "{408529E5-3794-469E-BA40-B4DEB3199C03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "iexchange_data", "iexchange_data", "{D481A5B1-2604-4348-A3C5-80E6B158E012}"
+	ProjectSection(SolutionItems) = preProject
+		iexchange_data\FOutput_190711_16_52_51_inputSampleCSV.txt.json = iexchange_data\FOutput_190711_16_52_51_inputSampleCSV.txt.json
+		iexchange_data\FOutput_190711_16_52_51_inputSampleFWF.txt.json = iexchange_data\FOutput_190711_16_52_51_inputSampleFWF.txt.json
+		iexchange_data\FOutput_190711_16_52_51_inputUCDFWF1.txt.json = iexchange_data\FOutput_190711_16_52_51_inputUCDFWF1.txt.json
+		iexchange_data\inputSampleCSV.txt = iexchange_data\inputSampleCSV.txt
+		iexchange_data\inputSampleFWF.txt = iexchange_data\inputSampleFWF.txt
+		iexchange_data\inputSamplePIPE.csv = iexchange_data\inputSamplePIPE.csv
+		iexchange_data\inputUCDFWF1.txt = iexchange_data\inputUCDFWF1.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SampleInputs", "SampleInputs", "{3E31A5FA-D87B-4628-8DD9-07DC60BB41EA}"
+	ProjectSection(SolutionItems) = preProject
+		iexchange_data\SampleInputs\inputSampleCSV_original.txt = iexchange_data\SampleInputs\inputSampleCSV_original.txt
+		iexchange_data\SampleInputs\inputSampleFWF_original.txt = iexchange_data\SampleInputs\inputSampleFWF_original.txt
+		iexchange_data\SampleInputs\inputSamplePIPE_original.csv = iexchange_data\SampleInputs\inputSamplePIPE_original.csv
+		iexchange_data\SampleInputs\inputUCDFWF1_original.txt = iexchange_data\SampleInputs\inputUCDFWF1_original.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "file_extract_data", "file_extract_data", "{83CF6145-DB46-44EC-82CC-2951D20347D0}"
+	ProjectSection(SolutionItems) = preProject
+		FileExtract\data_template_tag.xml = FileExtract\data_template_tag.xml
+		..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\extract_logfile_190716_17_47_06.log = ..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\extract_logfile_190716_17_47_06.log
+		..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\extract_logfile_190716_17_50_25.log = ..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\extract_logfile_190716_17_50_25.log
+		file_extract_data\extract_logfile_190802_19_40_37.log = file_extract_data\extract_logfile_190802_19_40_37.log
+		file_extract_data\extract_logfile_190808_15_15_01.log = file_extract_data\extract_logfile_190808_15_15_01.log
+		..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\extractOutput_190716_17_47_06.xml = ..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\extractOutput_190716_17_47_06.xml
+		..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\extractOutput_190716_17_50_25.xml = ..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\extractOutput_190716_17_50_25.xml
+		file_extract_data\extractOutput_190802_19_40_37.xml = file_extract_data\extractOutput_190802_19_40_37.xml
+		file_extract_data\extractOutput_190808_15_15_03.xml = file_extract_data\extractOutput_190808_15_15_03.xml
+		file_extract_data\FOutput_190802_19_40_37.json = file_extract_data\FOutput_190802_19_40_37.json
+		file_extract_data\FOutput_190808_15_15_01.json = file_extract_data\FOutput_190808_15_15_01.json
+		..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\rules_190716_17_47_06.json = ..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\rules_190716_17_47_06.json
+		..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\rules_190716_17_50_25.json = ..\ProjectGreenLeaf\ProjectGreenLeaf\Xtras\file_extract_data\rules_190716_17_50_25.json
+	EndProjectSection
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "FileExtract", "FileExtract\FileExtract.pyproj", "{68D8CADC-CDBD-49CB-B011-B65225C06A7D}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "Pre", "Pre\Pre.pyproj", "{F7FF03DB-482F-4EC9-A8F7-CCFD824EABF8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "pre_process_data", "pre_process_data", "{8DF9D633-1A9C-44D9-BAF7-574B12F66623}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99E77018-F6EB-452C-9D3F-0DA2C99EE9A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99E77018-F6EB-452C-9D3F-0DA2C99EE9A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{408529E5-3794-469E-BA40-B4DEB3199C03}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{408529E5-3794-469E-BA40-B4DEB3199C03}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68D8CADC-CDBD-49CB-B011-B65225C06A7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68D8CADC-CDBD-49CB-B011-B65225C06A7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7FF03DB-482F-4EC9-A8F7-CCFD824EABF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7FF03DB-482F-4EC9-A8F7-CCFD824EABF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{3E31A5FA-D87B-4628-8DD9-07DC60BB41EA} = {D481A5B1-2604-4348-A3C5-80E6B158E012}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A66BE494-7059-4F21-8A61-18ACF0D640D7}
+	EndGlobalSection
+EndGlobal

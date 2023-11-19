@@ -1,0 +1,32 @@
+{
+  "_id": "ObjectId(\"5e15b0f6f66df72ef00415be\")",
+  "UserId": "5340bee5-74b3-44b3-a3d1-0af82acf9932",
+  "RequestSubmitDate": "ISODate(\"2020-01-08T10:37:42.922+0000\")",
+  "ExtractRequestStatus": "Queued",
+  "DestinationId": "85723f69-6c30-ea11-aa2f-00d861752e4d",
+  "DestinationName": "Destination1 Nam",
+  "ExtractRequestStatusLog": [
+
+  ],
+  "Files": [
+    {
+      "extract_type_id": "456d4d1f-d987-e711-80d0-408d5c67671a",
+      "layout_id": "13df711f-5bb3-e911-8539-1c1b0db9f347",
+      "sql_name": "execute dbo.GetSnapshotExtract @param_json = ?",
+      "sql_param": "{\"ExtractFileSetUpId\":\"5be91f64-5822-ea11-aa29-00d861752e4d\",\"SubNetWorkIdList\":null,\"PayorIdList\":null,\"ProviderStatusIdList\":null,\"IsFeeSchedule\":null,\"IsContract\":null}",
+      "StartDate": "2020-01-10 16:00:34.681543",
+      "EndDate": "2020-01-10 16:00:39.830310",
+      "FileRequestStatus": "Queued",
+      "FileRequestStatusLog": [
+
+      ],
+      "Id": "5be91f64-5822-ea11-aa29-00d861752e4d",
+      "data_scope": "FULL",
+      "file_type": "json",
+      "file_name": "CustomProviderFile",
+      "output_file_location": "D:\\Santech\\IX_PY"
+    }
+  ],
+  "EndDate": "2020-01-10 16:00:39.835334",
+  "StartDate": "2020-01-10 16:00:34.675128"
+}

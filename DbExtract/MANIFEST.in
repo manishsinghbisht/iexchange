@@ -1,0 +1,14 @@
+include README.txt
+include docs/*.txt
+include dataTemplate.json
+include appLevel.py
+include config.json
+include extractRequest.py
+include maindbextract.py
+include mongoWorks.py
+include sqlWorks.py
+include sqlWorksSp.py
+include test_sample.py
+include dbextractRequest.py
+
+

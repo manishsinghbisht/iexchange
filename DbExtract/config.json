@@ -1,0 +1,44 @@
+{
+  "AppInfo": {
+    "NAME": "DbExtract"
+  },
+  "DEFAULT": {
+    "INPUTFILENAME": "",
+    "INPUTFILETYPE": "",
+    "DATAFOLDER": "db_extract_data",
+    "SECRET_KEY": "secret-key-of-myapp",
+    "ADMIN_NAME": "administrator",
+    "AWS_DEFAULT_REGION": "ap-northeast-2",
+    "MAX_IMAGE_SIZE": 5242880
+  },
+  "API": {
+    "CALL_API": "FALSE",
+    "API_URL": "http://localhost:31529/api/IExchange/IExchangeApiCall"
+  },
+  "SqlServerConnections1": {
+    "Server": "localhost",
+    "Database": "ST-E1-DEV",
+    "User": "msb",
+    "Password": "test@1234",
+    "Trusted_Connection": "No"
+  },
+  "SqlServerConnections": {
+    "Server": "10.109.182.73",
+    "Database": "UCDINETWORK7INT",
+    "User": "sa",
+    "Password": "fdfg#$35345DSF1",
+    "Trusted_Connection": "No"
+  },
+  "MongoConnections": {
+    "Client": "mongodb://localhost:27017",
+    "Database": "JsonDB",
+    "Client1": "mongodb://192.168.2.145:27017",
+    "Database1": "ST-E1-JSON-UAT"
+  },
+  "MongoConnections1": {
+    "Client": "mongodb://10.109.182.73:27017",
+    "Database": "UCDINetwork7Int"
+  }
+
+
+}

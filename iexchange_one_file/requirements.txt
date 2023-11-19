@@ -1,0 +1,18 @@
+# pip freeze > requirements.txt
+#pip install -r requirements.txt
+
+jsonmerge
+jsonschema
+logzero
+matplotlib
+numpy
+pandas
+pip
+pymongo
+pyodbc
+python-dateutil
+requests
+urllib3
+uuid
+setuptools
+cx_freeze

@@ -1,0 +1,129 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>408529e5-3794-469e-ba40-b4deb3199c03</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>start.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>iExchange</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
+    <IsWindowsApplication>False</IsWindowsApplication>
+    <InterpreterId>CondaEnv|CondaEnv|env_iexchange</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="root\apiCalls\insertApiCalls.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="root\apiCalls\__init__.py" />
+    <Compile Include="root\appLevel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="root\fileModules\JsonManager.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="root\fileModules\FwfManager.py" />
+    <Compile Include="root\fileModules\CsvManager.py" />
+    <Compile Include="root\fileModules\expiredPandasCsvManager.py" />
+    <Compile Include="root\fileModules\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="root\dbModules\createSamples.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="root\dbModules\mongoDbFileMapping.py" />
+    <Compile Include="root\dbModules\mongoDbCon.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="root\dbModules\__init__.py" />
+    <Compile Include="root\ruleModules\splitToJsonManager.py" />
+    <Compile Include="root\__init__.py" />
+    <Compile Include="root\__main__.py" />
+    <Compile Include="root\main_file_process.py" />
+    <Compile Include="root\fileModules\expiredBuiltInCsvManager.py" />
+    <Compile Include="root\main_execute.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="root\ruleModules\Assign.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="root\ruleModules\removeColumnManager.py" />
+    <Compile Include="root\ruleModules\ruleConditionalManager.py" />
+    <Compile Include="root\ruleModules\pickCharManager.py" />
+    <Compile Include="root\ruleModules\stringLowerUpperManager.py" />
+    <Compile Include="root\ruleModules\stringPrependManager.py" />
+    <Compile Include="root\ruleModules\stringAppendManager.py" />
+    <Compile Include="root\ruleModules\stringReplaceManager.py" />
+    <Compile Include="root\ruleModules\stringRemoveManager.py" />
+    <Compile Include="root\ruleModules\mergeRuleManager.py" />
+    <Compile Include="root\ruleModules\columnMapManager.py" />
+    <Compile Include="root\ruleModules\ruleIXTimeStampManager.py" />
+    <Compile Include="root\ruleModules\splitRuleManager.py" />
+    <Compile Include="root\ruleModules\ruleSsnManager.py" />
+    <Compile Include="root\ruleModules\ruleNpiManager.py" />
+    <Compile Include="root\ruleModules\__init__.py" />
+    <Compile Include="MANIFEST.in" />
+    <Compile Include="README.txt" />
+    <Compile Include="setup.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="setup_cx_freeze.py" />
+    <Compile Include="start.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="version.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CareSource_Sample\ix_logfile_200220_13_44_10.log" />
+    <Content Include="CareSource_Sample\Providers_Practitioner.csv" />
+    <Content Include="CareSource_Sample\Request.txt" />
+    <Content Include="CareSource_Sample\rulemappings_200220_13_44_10_58f5a096-5810-ea11-81e3-0631a9f233d0.json" />
+    <Content Include="JsonForAPITest.json" />
+    <Content Include="requirements.txt" />
+    <Content Include="root\internal.txt" />
+    <Content Include="ruleConfig_Csv.json" />
+    <Content Include="ruleConfig_Pipe.json" />
+    <Content Include="ruleConfig_inputUCDFWF1.json" />
+    <Content Include="ruleConfig_inputSampleFWF.json" />
+    <Content Include="systemRuleConfig.json" />
+    <Content Include="ruleConfig.json" />
+    <Content Include="config.json" />
+    <Content Include="dataTemplate.json">
+      <SubType>Code</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="root\fileModules\" />
+    <Folder Include="root\dbModules\" />
+    <Folder Include="root\apiCalls\" />
+    <Folder Include="CareSource_Sample\" />
+    <Folder Include="root\" />
+    <Folder Include="root\ruleModules\" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|env_iexchange" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

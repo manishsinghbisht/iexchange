@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1" standalone="no"?>
+<ProviderMaintenance>
+  <Provider isTemplateBaseProviderNode="Yes">
+    <Id></Id><UserId></UserId>
+
+    <ProviderDemographics>
+      <NPI></NPI>
+      <first_name></first_name>
+      <MiddleName></MiddleName>
+      <last_name></last_name>
+      <PreferedName></PreferedName>
+      <MaidenName></MaidenName>
+      <OtherKnownName></OtherKnownName>
+      <SpouseName></SpouseName>
+      <Suffix></Suffix>
+      <Prefix></Prefix>
+      <BirthDate></BirthDate>
+      <ContactDetails>
+        <Email></Email>
+        <Phone></Phone>
+      </ContactDetails>
+    </ProviderDemographics>
+
+    <Specialties>
+      <Specialty>
+        <TaxonomyCode></TaxonomyCode>  
+        <SpecialtyName></SpecialtyName>
+        <BoardStatus></BoardStatus>
+        <Addresses>
+          <Address>
+            <AddressName></AddressName>
+            <AddressLine1></AddressLine1>
+            <AddressLine2></AddressLine2>
+          </Address>
+          <Address>
+            <AddressName></AddressName>
+            <AddressLine1></AddressLine1>
+            <AddressLine2></AddressLine2>
+          </Address>
+
+        </Addresses>
+      </Specialty>
+    </Specialties>
+    
+    <SpecialtyTypeId></SpecialtyTypeId>
+    <ProviderTypeId></ProviderTypeId>
+    <ProviderSubTypeId></ProviderSubTypeId>
+    <DegreeTitleId></DegreeTitleId>
+    <Gender></Gender>
+    <IsDummyNPI></IsDummyNPI>
+    <NPI></NPI>
+    <SSN></SSN>
+    <TaxId></TaxId>
+    <Fax></Fax>
+    <Pager></Pager>
+    <BirthCountryId></BirthCountryId>
+    <BirthStateId></BirthStateId>
+    <BirthCity></BirthCity>
+    <Ethinicity></Ethinicity>
+  </Provider>
+  <FileControls>
+    <FileVersion></FileVersion>
+    <ProviderCount></ProviderCount>
+    <SourceSystemIdentifier></SourceSystemIdentifier>
+    <XMLVersion></XMLVersion>
+    <TransmissionTimestamp></TransmissionTimestamp>
+  </FileControls>
+</ProviderMaintenance>
+

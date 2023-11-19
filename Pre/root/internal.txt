@@ -1,0 +1,30 @@
+Pre
+------------------
+conda create -n env_iexchange python=3.7 or conda create --no-default-packages -n env_iexchange python=3.7
+conda env list
+conda activate myenv
+conda deactivate
+
+------------------
+
+pip install -r requirements.txt
+
+------------------
+
+>>> # python start.py
+
+------------------
+
+To use (with caution), simply do::
+
+# python setup.py build
+# python setup.py install
+# python setup.py sdist
+# python setup.py bdist --formats=wininst
+
+------------------
+# pip freeze > requirements.txt
+# python setup_cx_freeze.py build
+# python setup_cx_freeze.py bdist_msi
+
+------------------

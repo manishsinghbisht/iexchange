@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: iexchange
+Version: 1
+Summary: Data transfer utility
+Home-page: https://github.com/manishsinghbisht/
+Author: Manish Singh Bisht
+Author-email: msb.net.in@gmail.com
+License: MIT
+Description: Data transfer utility works in close connection with main web application.
+Keywords: Provider Data Exchange
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7 (64-bit)
+Classifier: Topic :: Data Processing :: Provider Data

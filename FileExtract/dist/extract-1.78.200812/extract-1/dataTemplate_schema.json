@@ -1,0 +1,992 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "Provider": {
+      "type": "object",
+      "required": [
+        "ProviderDemographics",
+        "ProviderSpeciality"
+      ],
+      "properties": {
+        "ProviderDemographics": {
+          "type": "object",
+          "required": [
+            "LastName",
+            "NPI"
+          ],
+          "description": "This node contains the Provider's demographics information, i.e. Name, Gender, DOB etc.",
+          "properties": {
+            "ProviderID": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Provider table's primary key in I-Network, can be used by consuming systems to uniquely identify a provider in I-Network."
+            },
+            "ProviderCategory": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Provider Category, will have either of the following values: Individual, Non-Individual, Parent Group."
+            },
+            "ProviderType": {
+              "type": "string",
+              "maxLength": 200,
+              "description": "Provider Type, Example values: Chiropractic Providers, Dental Providers, Agencies etc."
+            },
+            "DegreeTitle": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Individual Provider's Title, examples: DMD, DDS, CRNA etc."
+            },
+            "Gender": {
+              "type": "string",
+              "maxLength": 20,
+              "description": "First letter of Provider's Gender. examples: M, F"
+            },
+            "NPIPrior": {
+              "type": "string",
+              "maxLength": 20,
+              "description": "NPI before the last change."
+            },
+            "NPI": {
+              "type": "string",
+              "maxLength": 20,
+              "description": "Current NPI of the Provider."
+            },
+            "IsDummyNPI": {
+              "type": "string",
+              "maxLength": 5,
+              "description": "NPI is actual or a system generated random number."
+            },
+            "SSN": {
+              "type": "string",
+              "maxLength": 20,
+              "description": "SSN of the Individual Provider."
+            },
+            "FirstName": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Individual Provider's First Name."
+            },
+            "MiddleName": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Individual Provider's Middle Name."
+            },
+            "LastName": {
+              "type": "string",
+              "maxLength": 200,
+              "description": "Last Name of Individual Provider or Provider Name of Non-Individual/Parent Group Provider."
+            },
+            "Prefix": {
+              "type": "string",
+              "maxLength": 32,
+              "description": "Individual Provider's Prefix"
+            },
+            "Suffix": {
+              "type": "string",
+              "maxLength": 32,
+              "description": "Individual Provider's Suffix "
+            },
+            "MaidenName": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Individual Provider's Maiden Name."
+            },
+            "BirthDate": {
+              "type": "string",
+              "maxLength": 10,
+              "description": "Format would be YYYYMMDD, example: 20190101."
+            },
+            "Email": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Provider's Email. Format would be abc@email.com"
+            },
+            "Ethnicity": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Individual Provider's Ethnicity."
+            },
+            "BirthCity": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Individual Provider's Birth City."
+            },
+            "BirthCountry": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Individual Provider's Birth Country."
+            },
+            "BirthState": {
+              "type": "string",
+              "maxLength": 10,
+              "description": "Individual Provider's Birth State."
+            },
+            "CitizenshipCountry": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Individual Provider's Country of Citizenship."
+            },
+            "MaritalStatus": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Individual Provider's Marital Status."
+            },
+            "SpouseName": {
+              "type": "string",
+              "maxLength": 100,
+              "description": "Individual Provider's SpouseName."
+            },
+            "Phone": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Provider's Phone number."
+            },
+            "CellPhone": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Individual Provider's Cellphone number."
+            },
+            "DBAName": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Non Individual Provider's Doing Business As name."
+            },
+            "Fax": {
+              "type": "string",
+              "maxLength": 50,
+              "description": "Provider's Fax number."
+            }
+          }
+        },
+        "ProviderOtherIdType": {
+          "type": "array",
+          "items": {
+            "required": [
+              "OtherIdType",
+              "OtherIdNumber"
+            ],
+            "properties": {
+              "OtherIdType": {
+                "type": "string",
+                "maxLength": 1000,
+                "description": "Other Id type for the Other Id being sent"
+              },
+              "OtherIdNumber": {
+                "type": "string",
+                "maxLength": 500,
+                "description": "Other Id number for ID"
+              },
+              "StartDate": {
+                "type": "string",
+                "maxLength": 100,
+                "description": "Start Date or Effective Date for the Id"
+              },
+              "ExpirationDate": {
+                "type": "string",
+                "maxLength": 100,
+                "description": "Expiration date for the id"
+              },
+              "State": {
+                "type": "string",
+                "maxLength": 500,
+                "description": "State to which the Id belongs."
+              }
+            }
+          }
+        },
+        "ProviderSanction": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "description": "Will have the most recent sanction imposed on the provider, although its an array but will not have multiple values.",
+              "properties": {
+                "SanctionType": {
+                  "type": "string",
+                  "maxLength": 500,
+                  "description": "Sanction Type, examples: SAM, OIG or OPM."
+                },
+                "RegistrationNumber": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Registration number of the license in case of license suspension."
+                },
+                "SanctionState": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "State for which the suspension was imposed."
+                },
+                "SanctionBoard": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Name of the board from where suspension was imposed."
+                },
+                "StartDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Start Date of Sanction, format will be YYYYMMDD, example: 20190101."
+                },
+                "EndDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "End Date of Sanction, format will be YYYYMMDD, example: 20191231."
+                },
+                "Reason": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Reason why the sanction was imposed."
+                },
+                "ModifiedBy": {
+                  "type": "string",
+                  "maxLength": 256,
+                  "description": "The login id of the user who did the last change on the record."
+                },
+                "ModifiedDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the record got modified last, format will be YYYYMMDD, example: 20190101."
+                }
+              }
+            }
+          ]
+        },
+        "ProviderSpeciality": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "description": "This node will have the details of the Specialty on the Affiliation Line for the record, although its an array but will not have multiple values.",
+              "properties": {
+                "SpecialityLevelName": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Provider's Specialty Level such as Primary, Secondary etc."
+                },
+                "SpecialityLevelNamePrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Provider's Specialty Level, before last change."
+                },
+                "TaxonomyCode": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "CMS Taxonomy Code of Provider's Specialty."
+                },
+                "TaxonomyCodePrior": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "CMS Taxonomy Code of Provider's Specialty before last change."
+                },
+                "BoardStatus": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Board certification status such as Certified, Candidate, Eligible etc."
+                }
+              }
+            }
+          ]
+        },
+        "ProviderLicense": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "description": "This node will have the most recent created or updated State License for the State of the location in the Affiliation Line. Although its an array but will not have multiple values.",
+              "properties": {
+                "PriorLicenseTypeName": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "License Type name such as State License or DEA or CDS etc. of the license before last change. Only License Type = State License will be sent in this property."
+                },
+                "LicenseTypeName": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "License Type name such as State License or DEA or CDS etc. of the license. Only License Type = State License will be sent in this property"
+                },
+                "PriorLicenseNumber": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "State License number (License Type = State License) before last change."
+                },
+                "LicenseNumber": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "State License number (License Type = State License)."
+                },
+                "IssueDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the state license was issued, format will be YYYYMMDD, example: 20190101."
+                },
+                "ExpirationDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the state license expires, format will be YYYYMMDD, example: 20191231."
+                },
+                "State": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "2 bytes State Code of the license for which it was issued. Format would be AK, NJ etc."
+                },
+                "PriorState": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "State Code of the license for which it was issued before last change."
+                },
+                "LicenseStatus": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "State License Status, example: Active, Expired, Suspended etc."
+                },
+                "TerminatedDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date license was terminated, format will be YYYYMMDD, example: 20190101."
+                },
+                "Lic1TerminationReasonCode": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "License Termination Reason."
+                },
+                "Lic1SuspensionReasonCode": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "License Suspension Reason."
+                },
+                "Lic1SuspensionStartDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Suspension Start Date, format will be YYYYMMDD, example: 20190101."
+                },
+                "Lic1SuspensionEndDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Suspension End Date, format will be YYYYMMDD, example: 20191231."
+                },
+                "Lic1ProbationReasonCode": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "License Probation Reason."
+                },
+                "Lic1ProbationStartDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Probation Start Date, format will be YYYYMMDD, example: 20190101."
+                },
+                "Lic1ProbationEndDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Probation End Date, format will be YYYYMMDD, example: 20191231."
+                }
+              }
+            }
+          ]
+        },
+        "ProviderDEALicense": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "description": "This node will have the most recent created or updated DEA License for the State of the location in the Affiliation Line. Although its an array but will not have multiple values.",
+              "properties": {
+                "LicenseNumber": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "DEA License Number"
+                },
+                "IssueDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "DEA license issue date, format will be YYYYMMDD, example: 20190101."
+                },
+                "ExpirationDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "DEA license expiration date, format will be YYYYMMDD, example: 20191231."
+                },
+                "ModifiedBy": {
+                  "type": "string",
+                  "maxLength": 256,
+                  "description": "The login id of the user who did the last change on the record."
+                },
+                "ModifiedDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the record got modified last, format will be YYYYMMDD, example: 20190101."
+                }
+              }
+            }
+          ]
+        },
+        "ProviderLicenseStatusLog": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "description": "This node will have the termination, suspension or probation logs for the license, may have 3 values based on the status.",
+              "properties": {
+                "LicenseNumber": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "The State License for which the status change log is being sent."
+                },
+                "Status": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "New License Status, example: Suspended, Probation etc."
+                },
+                "StartDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "The date on which the new Status gets effective, format will be YYYYMMDD, example: 20190101."
+                },
+                "EndDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "The date on which the new Status period ends, format will be YYYYMMDD, example: 20190101."
+                },
+                "TerminationReason": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Reason because of which the status got changed."
+                }
+              }
+            }
+          ]
+        },
+        "PracticeLocation": {
+          "type": "array",
+          "description": "This node will have the provider's practicing location information in the affiliation line. Although its an array but will not have multiple values.",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "TaxIdPrior": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "Tax Id before the last change."
+                },
+                "TaxId": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "Tax Id with which the location is attached."
+                },
+                "TaxType": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "Tax Type for the Practice, values will be EIN or SSN"
+                },
+                "PracticeNamePrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practice name before the last change."
+                },
+                "PracticeName": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practice name."
+                },
+                "PracticeEffectiveDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Practice's effective date, format will be YYYYMMDD, example: 20190101."
+                },
+                "PracticeTerminateDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Practice's termination date, format will be YYYYMMDD, example: 20190101."
+                },
+                "PracticeTerminationReason": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practice's termination reason, required if term date is there."
+                },
+                "PracticeModifiedBy": {
+                  "type": "string",
+                  "maxLength": 256,
+                  "description": "The login id of the user who did the last change on the record."
+                },
+                "PracticeModifiedDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the record got modified last, format will be YYYYMMDD, example: 20190101."
+                },
+                "LocationName": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Name of the location."
+                },
+                "OfficeLocationAlias": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Doing business as name for the location."
+                },
+                "OfficeLocationPurpose": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "The purpose for which any DBA is used."
+                },
+                "OfficeAliasModifiedBy": {
+                  "type": "string",
+                  "maxLength": 256,
+                  "description": "The login id of the user who did the last change on the record."
+                },
+                "OfficeAliasModifiedDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the record got modified last, format will be YYYYMMDD, example: 20190101."
+                },
+                "WeekendHours": {
+                  "type": "string",
+                  "maxLength": 5,
+                  "description": "Weekend availability flag for the location coming into the Affiliation Line for the record."
+                },
+                "EveningHours": {
+                  "type": "string",
+                  "maxLength": 5,
+                  "description": "Evening Hours availability flag for the location coming into the Affiliation Line for the record."
+                },
+                "DateOfHiring": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date of Hiring for the location coming into the Affiliation Line for the record."
+                },
+                "Address1Prior": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Practicing location's Address1 before the last change."
+                },
+                "Address1": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Practicing location's Address1."
+                },
+                "Address2": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's Address2."
+                },
+                "Address2Prior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's Address2 before last change."
+                },
+                "CityPrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's City before last change."
+                },
+                "City": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's City."
+                },
+                "StateCodePrior": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Practicing location's State before last change."
+                },
+                "State": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's State."
+                },
+                "ZipPrior": {
+                  "type": "string",
+                  "maxLength": 20,
+                  "description": "Practicing location's Zip+4 before last change."
+                },
+                "Zip": {
+                  "type": "string",
+                  "maxLength": 20,
+                  "description": "Practicing location's Zip+4."
+                },
+                "CountyPrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's County before last change."
+                },
+                "County": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's County."
+                },
+                "PriorCountryCode": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Practicing location's three character Country Code before last change."
+                },
+                "CountryCode": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Practicing location's three character Country Code."
+                },
+                "PriorCountry": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's Full name of the Country before last change."
+                },
+                "Country": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Practicing location's Full name of the Country."
+                },
+                "PriorLatitude": {
+                  "type": "number",
+                  "maxLength": 18,
+                  "description": "Practicing location's Latitude before last change."
+                },
+                "Latitude": {
+                  "type": "number",
+                  "maxLength": 18,
+                  "description": "Practicing location's Latitude."
+                },
+                "PriorLongitude": {
+                  "type": "number",
+                  "maxLength": 18,
+                  "description": "Practicing location's Longitude before last change."
+                },
+                "Longitude": {
+                  "type": "number",
+                  "maxLength": 18,
+                  "description": "Practicing location's Longitude."
+                },
+                "EffectiveDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Provider-Practice-Location level effective date, format will be YYYYMMDD , example: 20190101."
+                },
+                "TerminationDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Provider-Practice-Location level termination date, format will be YYYYMMDD , example: 20190101."
+                },
+                "TerminationReason": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Provider-Practice-Location level termination reason, required if term date is there."
+                },
+                "EMail1": {
+                  "type": "string",
+                  "maxLength": 400,
+                  "description": "Practicing location's Email. Format would be abc@email.com"
+                },
+                "PPLID": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Provider-Practice-Location (Table name: ProviderPracticeLocation) level Primary Key from I-Network."
+                },
+                "BillingAddress1": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Billing Location's Address1 for the Practicing Location."
+                },
+                "BillingAddress2": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's Address2 for the Practicing Location."
+                },
+                "BillingCity": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's City for the Practicing Location."
+                },
+                "BillingState": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's State for the Practicing Location."
+                },
+                "BillingZip": {
+                  "type": "string",
+                  "maxLength": 20,
+                  "description": "Billing Location's Zip for the Practicing Location."
+                },
+                "BillingCounty": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's County for the Practicing Location."
+                },
+                "BillingCountyCode": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's FIPS County Code for the Practicing Location."
+                },
+                "BillingCountryName": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's Country Name for the Practicing Location."
+                },
+                "BillingCountryCode": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's three character Country code for the Practicing Location."
+                },
+                "ModifiedBy": {
+                  "type": "string",
+                  "maxLength": 256,
+                  "description": "The login id of the user who did the last change on the record."
+                },
+                "ModifiedDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the record got modified last, format will be YYYYMMDD, example: 20190101."
+                },
+                "BillingAddress1Prior": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Billing Location's Address1 for the Practicing Location before last change."
+                },
+                "BillingAddress2Prior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's Address2 for the Practicing Location before last change."
+                },
+                "BillingCityPrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's City for the Practicing Location before last change."
+                },
+                "BillingStatePrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's State for the Practicing Location before last change."
+                },
+                "BillingZipPrior": {
+                  "type": "string",
+                  "maxLength": 20,
+                  "description": "Billing Location's Zip for the Practicing Location before last change."
+                },
+                "BillingCountyPrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's County for the Practicing Location before last change."
+                },
+                "BillingCountryNamePrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's full Country name for the Practicing Location before last change."
+                },
+                "BillingCountryCodePrior": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Billing Location's three character Country code for the Practicing Location before last change."
+                }
+              }
+            }
+          ]
+        },
+        "AffiliationLine": {
+          "type": "array",
+          "description": "This node will have the Affiliation Level details and any additional information at that level. Although its an array but will not have multiple values.",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "NetworkName": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Name of the Network on the Affiliation Line."
+                },
+                "SubNetworkName": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Name of the Sub Network on the Affiliation Line."
+                },
+                "TaxId": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "Tax Id on the Affiliation Line."
+                },
+                "Address1": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Address1 of the Location on the Affiliation Line."
+                },
+                "Address2": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Address2 of the Location on the Affiliation Line."
+                },
+                "City": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "City of the Location on the Affiliation Line."
+                },
+                "State": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "State of the Location on the Affiliation Line."
+                },
+                "Zip": {
+                  "type": "string",
+                  "maxLength": 20,
+                  "description": "Zip+4 of the Location on the Affiliation Line."
+                },
+                "TaxonomyCode": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "Taxonomy Code of the Specialty on the Affiliation Line."
+                },
+                "EffectiveDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "EffectiveDate of the Affiliation Line, format will be YYYYMMDD, example: 20190101."
+                },
+                "TerminationDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "TerminateDate of the Affiliation Line, format will be YYYYMMDD, example: 20191231."
+                },
+                "TerminationReason": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Termination Reason of the Affiliation Line, required if the term date is there."
+                },
+                "PushToDirectory": {
+                  "type": "string",
+                  "maxLength": 5,
+                  "description": "Flag to indicate whether provider within the affiliation line is good to be pushed to provider directory or not"
+                },
+                "AcceptingNewPatient": {
+                  "type": "string",
+                  "maxLength": 5,
+                  "description": "Flag to indicate whether provider within the affiliation line is accepting new patient(s) or not."
+                },
+                "AccNewEffDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Start date for accepting new patient(s) within the affiliation line. We will be sending it in YYYYMMDD format, example: 20190101."
+                },
+                "AccNewTermDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "End date for accepting new patient(s) within the affiliation line. We will be sending it in YYYYMMDD format, example: 20190101."
+                },
+                "ParticipationOptOutIdNumber": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Indicates provider opt out within the affiliation line for certain entity."
+                },
+                "ParticipationOptOutEffDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Provider opt out start date. We will be sending it in YYYYMMDD format, example: 20190101."
+                },
+                "ParticipationOptOutEndDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Provider opt out end date. We will be sending it in YYYYMMDD format, example: 20190101."
+                },
+                "ParticipationOptOutModifiedBy": {
+                  "type": "string",
+                  "maxLength": 256,
+                  "description": "The login id of the user who did the last change on the record."
+                },
+                "ParticipationOptOutModifiedDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the record got modified last, format will be YYYYMMDD, example: 20190101."
+                }
+              }
+            }
+          ]
+        },
+        "AffiliationLineFeeSchedule": {
+          "type": "array",
+          "description": "This node will have the latest Fee Schedule related information against the Affiliation Line. Although its an array but will not have multiple values.",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "NetworkName": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Name of the Network on the Affiliation Line."
+                },
+                "SubNetworkName": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Name of the Sub Network on the Affiliation Line."
+                },
+                "TaxId": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "Tax Id on the Affiliation Line."
+                },
+                "Address1": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Address1 of the Location on the Affiliation Line."
+                },
+                "Address2": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Address2 of the Location on the Affiliation Line."
+                },
+                "City": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "City of the Location on the Affiliation Line."
+                },
+                "State": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "State of the Location on the Affiliation Line."
+                },
+                "Zip": {
+                  "type": "string",
+                  "maxLength": 20,
+                  "description": "Zip+4 of the Location on the Affiliation Line."
+                },
+                "TaxonomyCode": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "Taxonomy Code of the Specialty on the Affiliation Line."
+                },
+                "FeeScheduleName": {
+                  "type": "string",
+                  "maxLength": 200,
+                  "description": "Name of Fee Schedule on the affiliation line"
+                },
+                "FeeScheduleCode": {
+                  "type": "string",
+                  "maxLength": 50,
+                  "description": "Fee Schedule Code of the fee schedule on the affiliation line"
+                },
+                "EffectiveDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Fee Schedule Effective Date on the affiliation line. We will be sending it in YYYYMMDD format, example: 20190101."
+                },
+                "TerminationDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Fee Schedule Termination Date on the affiliation line-Fee Schedule. We will be sending it in YYYYMMDD format, example: 20190101."
+                },
+                "TerminationReason": {
+                  "type": "string",
+                  "maxLength": 100,
+                  "description": "Termination Reason of the Affiliation Line-Fee Schedule, required if the term date is there."
+                },
+                "ModifiedBy": {
+                  "type": "string",
+                  "maxLength": 256,
+                  "description": "The login id of the user who did the last change on the record."
+                },
+                "ModifiedDate": {
+                  "type": "string",
+                  "maxLength": 10,
+                  "description": "Date on which the record got modified last, format will be YYYYMMDD, example: 20190101."
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  "required": [
+    "Provider"
+  ]
+}

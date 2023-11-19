@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<ProviderMaintenance xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Provider isTemplateBaseProviderNode='Yes'>
+    <Practice>
+      <PracticeID>
+        <PriorIdentifier></PriorIdentifier>
+        <PriorTypeCode></PriorTypeCode>
+        <PriorBusinessName></PriorBusinessName>
+        <PriorEffectiveDate></PriorEffectiveDate>
+        <Identifier></Identifier>
+        <TypeCode></TypeCode>
+        <BusinessName></BusinessName>
+        <EffectiveDate></EffectiveDate>
+        <CancelDate></CancelDate>
+      </PracticeID>
+     <Location>
+        <HP_ID></HP_ID>
+        <AttestedEmail>
+          <Address></Address>
+          <AttestationDate></AttestationDate>
+          <StatusCode></StatusCode>
+          <MaintenanceUser></MaintenanceUser>
+          <MaintenanceTimestamp></MaintenanceTimestamp>
+        </AttestedEmail>
+        <Site>
+          <FaxPhone>
+            <PriorPhone>
+              <InternationalCallPrefix></InternationalCallPrefix>
+              <FullNumber></FullNumber>
+              <Extension></Extension>
+            </PriorPhone>
+            <CurrPhone>
+              <InternationalCallPrefix></InternationalCallPrefix>
+              <FullNumber></FullNumber>
+              <Extension></Extension>
+              <MaintenanceUser></MaintenanceUser>
+              <MaintenanceTimestamp></MaintenanceTimestamp>
+            </CurrPhone>
+          </FaxPhone>
+          <OfficePhone>
+            <PriorPhone>
+              <InternationalCallPrefix></InternationalCallPrefix>
+              <FullNumber></FullNumber>
+              <Extension></Extension>
+            </PriorPhone>
+            <CurrPhone>
+              <InternationalCallPrefix></InternationalCallPrefix>
+              <FullNumber></FullNumber>
+              <Extension></Extension>
+              <MaintenanceUser></MaintenanceUser>
+              <MaintenanceTimestamp></MaintenanceTimestamp>
+            </CurrPhone>
+          </OfficePhone>
+          <OfficeHours>
+            <OpenInterval>
+              <StartTime></StartTime>
+              <EndTime></EndTime>
+            </OpenInterval>
+            <DayOfTheWeekCode></DayOfTheWeekCode>
+            <MaintenanceUser></MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+          </OfficeHours>
+          <OfficeHours>
+            <OpenInterval>
+              <StartTime></StartTime>
+              <EndTime></EndTime>
+            </OpenInterval>
+            <DayOfTheWeekCode></DayOfTheWeekCode>
+            <MaintenanceUser></MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+          </OfficeHours>
+          <OfficeHours>
+            <OpenInterval>
+              <StartTime></StartTime>
+              <EndTime></EndTime>
+            </OpenInterval>
+            <DayOfTheWeekCode></DayOfTheWeekCode>
+            <MaintenanceUser> </MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+          </OfficeHours>
+          <OfficeHours>
+            <OpenInterval>
+              <StartTime></StartTime>
+              <EndTime></EndTime>
+            </OpenInterval>
+
+            <DayOfTheWeekCode></DayOfTheWeekCode>
+            <MaintenanceUser></MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+          </OfficeHours>
+          <OfficeHours>
+            <OpenInterval>
+              <StartTime></StartTime>
+              <EndTime></EndTime>
+            </OpenInterval>
+
+            <DayOfTheWeekCode></DayOfTheWeekCode>
+            <MaintenanceUser></MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+          </OfficeHours>
+
+          <DEASiteRegistration>
+            <Number></Number>
+          </DEASiteRegistration>
+
+          <ParNetwork>
+            <NetworkCode></NetworkCode>
+            <SpecialtyTypeCode></SpecialtyTypeCode>
+            <EffectiveDate></EffectiveDate>
+            <CancellationDate></CancellationDate>
+
+
+            <NetworkStatusReasonCode></NetworkStatusReasonCode>
+            <EnrollmentDirectoryIndicator></EnrollmentDirectoryIndicator>
+            <MaintenanceUser></MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+            <SubNetworkCode></SubNetworkCode>
+          </ParNetwork>          
+          <SiteSpecificServices>
+            <TypeCode></TypeCode>
+            <StatusCode></StatusCode>
+            <MaintenanceUser></MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+          </SiteSpecificServices>          
+          <PriorBusAddress>
+            <Address1></Address1>
+            <Address2></Address2>
+            <City></City>
+            <County></County>
+            <CountyName></CountyName>
+            <State></State>
+            <PostalCode></PostalCode>
+            <EffectiveDate></EffectiveDate>
+            <ExpirationDate></ExpirationDate>
+            <CountryCode></CountryCode>
+            <CountryName></CountryName>
+            <Latitude></Latitude>
+            <Longitude></Longitude>
+          </PriorBusAddress>
+          <CurrBusAddress>
+            <Address1></Address1>
+            <Address2></Address2>
+            <City></City>
+            <County></County>
+            <CountyName></CountyName>
+            <State></State>
+            <PostalCode></PostalCode>
+            <EffectiveDate></EffectiveDate>
+            <ExpirationDate></ExpirationDate>
+            <CountryCode></CountryCode>
+            <CountryName></CountryName>
+            <Latitude></Latitude>
+            <Longitude></Longitude>
+            <MaintenanceUser></MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+          </CurrBusAddress>
+          <PriorMailAddress>
+            <Address1> </Address1>
+            <Address2> </Address2>
+            <City> </City>
+            <County> </County>
+            <CountyName> </CountyName>
+            <State> </State>
+            <PostalCode> </PostalCode>
+            <CountryCode> </CountryCode>
+            <CountryName> </CountryName>
+          </PriorMailAddress>
+          <CurrMailAddress>
+            <Address1></Address1>
+            <Address2></Address2>
+            <City></City>
+            <County></County>
+            <CountyName></CountyName>
+            <State></State>
+            <PostalCode></PostalCode>
+            <EffectiveDate></EffectiveDate>
+            <ExpirationDate></ExpirationDate>
+            <CountryCode></CountryCode>
+            <CountryName></CountryName>
+            <MaintenanceUser></MaintenanceUser>
+            <MaintenanceTimestamp></MaintenanceTimestamp>
+          </CurrMailAddress>
+          <UniformResourceLocatorAddress></UniformResourceLocatorAddress>
+          <MaintenanceUser></MaintenanceUser>
+          <MaintenanceTimestamp></MaintenanceTimestamp>
+        </Site>
+
+        <GroupPracticePractitioner>
+          <HP_ID></HP_ID>
+          <EffectiveDate></EffectiveDate>
+          <CancellationDate></CancellationDate>
+          <MaintenanceUser></MaintenanceUser>
+          <MaintenanceTimestamp></MaintenanceTimestamp>
+        </GroupPracticePractitioner>
+
+
+        <AdditionalIdentifier>
+          <Identifier></Identifier>
+          <TypeCode></TypeCode>
+          <EffectiveDate></EffectiveDate>
+          <CancellationDate></CancellationDate>
+          <MaintenanceUser></MaintenanceUser>
+          <MaintenanceTimestamp></MaintenanceTimestamp>
+        </AdditionalIdentifier>
+        <AdditionalIdentifier>
+          <Identifier></Identifier>
+          <TypeCode></TypeCode>
+          <EffectiveDate></EffectiveDate>
+          <CancellationDate></CancellationDate>
+          <MaintenanceUser></MaintenanceUser>
+          <MaintenanceTimestamp></MaintenanceTimestamp>
+        </AdditionalIdentifier>
+
+        <INwkPPLIdentifier></INwkPPLIdentifier>
+      </Location>
+    </Practice>   
+    <Professional>
+      <HP_ID></HP_ID>
+
+      <AdditionalIdentifier>
+        <Identifier></Identifier>
+        <TypeCode></TypeCode>
+        <EffectiveDate></EffectiveDate>
+        <CancellationDate></CancellationDate>
+        <MaintenanceUser></MaintenanceUser>
+        <MaintenanceTimestamp></MaintenanceTimestamp>
+      </AdditionalIdentifier>
+
+
+      <DoDBaseProximity>
+        <Name> </Name>
+        <StatusCode> </StatusCode>
+        <MaintenanceUser> </MaintenanceUser>
+        <MaintenanceTimestamp></MaintenanceTimestamp>
+      </DoDBaseProximity>
+
+
+      <License>
+        <PriorNumber></PriorNumber>
+        <Number></Number>
+        <PriorType></PriorType>
+        <TypeCode></TypeCode>
+        <PriorPolRgnCode></PriorPolRgnCode>
+        <PoliticalRegionCode></PoliticalRegionCode>
+        <PriorCountry></PriorCountry>
+        <CountryCode></CountryCode>
+        <EffectiveDate></EffectiveDate>
+        <ExpirationDate></ExpirationDate>
+        <TerminationDate></TerminationDate>
+        <TerminationReasonCode></TerminationReasonCode>
+        <MaintenanceUser></MaintenanceUser>
+        <MaintenanceTimestamp></MaintenanceTimestamp>
+      </License>
+
+      <Sanction>
+        <ReasonCode> </ReasonCode>
+        <EffectiveDate></EffectiveDate>
+        <CancellationDate></CancellationDate>
+        <MaintenanceUser></MaintenanceUser>
+        <MaintenanceTimestamp></MaintenanceTimestamp>
+      </Sanction>
+
+      <Specialty>
+        <PriorTypeCode></PriorTypeCode>
+        <TypeCode></TypeCode>
+        <PriorPrimarySecondaryCode></PriorPrimarySecondaryCode>
+        <PrimarySecondaryCode></PrimarySecondaryCode>
+        <BoardCertificationStatusCode></BoardCertificationStatusCode>
+        <EffectiveDate></EffectiveDate>
+        <CancellationDate></CancellationDate>
+        <MaintenanceUser></MaintenanceUser>
+        <MaintenanceTimestamp></MaintenanceTimestamp>
+      </Specialty>
+
+      <SocialSecurityNumber></SocialSecurityNumber>
+      <DegreeCode></DegreeCode>
+      <PrecedingTitle></PrecedingTitle>
+      <FirstName></FirstName>
+      <MiddleName></MiddleName>
+      <LastName></LastName>
+      <BirthDate></BirthDate>
+      <SucceedingTitle></SucceedingTitle>
+      <AdditionalSucceedingTitle></AdditionalSucceedingTitle>
+      <Gender></Gender>
+      <DebarredEffectiveDate></DebarredEffectiveDate>
+      <DebarredCancelDate></DebarredCancelDate>
+      <MaintenanceUser></MaintenanceUser>
+      <MaintenanceTimestamp></MaintenanceTimestamp>
+
+      <Email>
+        <Address></Address>
+        <StatusCode></StatusCode>
+        <MaintenanceUser></MaintenanceUser>
+        <MaintenanceTimestamp></MaintenanceTimestamp>
+      </Email>
+
+      <SpotSyncIndicator></SpotSyncIndicator>
+    </Professional>   
+    <RelatedProvider>
+      <HP_ID></HP_ID>
+      <EffectiveDate></EffectiveDate>
+      <CancellationDate></CancellationDate>
+      <MaintenanceUser></MaintenanceUser>
+      <MaintenanceTimestamp></MaintenanceTimestamp>
+    </RelatedProvider>    
+    <ProviderID></ProviderID>
+    <GroupPracticeIndicator></GroupPracticeIndicator>
+    <CancelProviderReason></CancelProviderReason>
+    <CancelProviderDate></CancelProviderDate>
+    <MaintenanceUser></MaintenanceUser>
+  </Provider>
+  <FileControls>
+    <FileVersion></FileVersion>
+    <ProviderCount></ProviderCount>
+    <SourceSystemIdentifier></SourceSystemIdentifier>
+    <XMLVersion></XMLVersion>
+    <TransmissionTimestamp></TransmissionTimestamp>
+  </FileControls>
+</ProviderMaintenance>

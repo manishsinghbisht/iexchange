@@ -1,0 +1,55 @@
+{
+  "AppInfo": {
+    "NAME": "Research"
+  },
+  "DEFAULT": {
+    "FILE_PREVIOUS": "FACETSampleYesterday.txt",
+    "FILE_CURRENT": "FACETSampletoday.txt",
+    "INPUTFILETYPE": "",
+    "DELIMITER": "",
+    "DATAFOLDER": "iexchange_data",
+    "CHUNK_SIZE": 1000,
+    "SECRET_KEY": "secret-key-of-myapp",
+    "ADMIN_NAME": "administrator",
+    "AWS_DEFAULT_REGION": "ap-northeast-2",
+    "MAX_IMAGE_SIZE": 5242880,
+    "USE_RULECONFIG_FOR_MAPPING": "FALSE",
+    "RESET_MAPPINGS_DB": "FALSE",
+    "SUMMARY_LOGGING_ONLY": "TRUE",
+    "UPDATE_FINALOUTPUT_IN_DB": "FALSE",
+    "UPDATE_LOG_IN_DB": "FALSE",
+    "WRITE_FOUTPUT_JSON": "TRUE"
+  },
+  "API": {
+    "CALL_API": "FALSE",
+    "USE_TEST_JSON": "FALSE",
+    "API_URL": "http://localhost:31529/api/IExchange/IExchangeApiCall",
+    "IX_CACHE_INIT": "http://localhost:31529/api/IExchange/IExchangeApiCallCacheInit"
+  },
+  "AddressColumnMap": {
+    "Data.AddressLine1": "Address1",
+    "Data.AddressLine2": "Address2",
+    "Data.AddressLine3": null,
+    "Data.AddressLine4": null,
+    "Data.AddressLine5": "County",
+    "Data.City": "City",
+    "Data.StateProvince": "State",
+    "Data.PostalCode": "Zip",
+    "Data.Country": "CountryName"
+  },
+  "TEST": {
+    "TEST_TMP_DIR": "tests",
+    "TEST_TIMEOUT": 20
+  },
+  "CI": {
+    "SERVICE": "travis-ci",
+    "HOOK_URL": "web-hooking-url-from-ci-service"
+  },
+  "MongoConnections": {
+    "Client1": "mongodb://10.109.181.39",
+    "Database1": "caresource",
+    "Client": "mongodb://localhost:27017",
+    "Database": "ST-E1-JSON-DEV"
+  }
+
+}

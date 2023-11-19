@@ -1,0 +1,66 @@
+{
+  "AppInfo": {
+    "NAME": "Extract"
+  },
+  "DEFAULT": {
+    "DEBUG": "TRUE",
+    "DATAFOLDER": "file_extract_data",
+    "SECRET_KEY": "secret-key-of-myapp",
+    "ADMIN_NAME": "administrator",
+    "AWS_DEFAULT_REGION": "ap-northeast-2",
+    "MAX_IMAGE_SIZE": 5242880,
+    "EXECUTE_SP": "FALSE",
+    "RULE_CONFIG_STD": "ruleConfig_std.json",
+    "RULE_CONFIG_PVT": "ruleConfig_pvt.json",
+    "CHUNK_SIZE": 100,
+    "SUMMARY_LOGGING_ONLY": "TRUE",
+    "WRITE_FOUTPUT_JSON": "TRUE",
+    "MATCH_JSON_SCHEMA": "FALSE"
+  },
+  "EXTRACT_FILES": {
+    "LOG_MAP_ERRORS": false,
+    "WRITE_JSON": true,
+    "WRITE_XML": false,
+    "XML_TEMPLATE": "data_template_tag.xml",
+    "WRITE_CSV": true,
+    "CSV_TEMPLATE": "data_template_tag.csv",
+    "WRITE_FWF": false,
+    "FWF_TEMPLATE": "data_template_tag.fwf"
+  },
+  "OUTPUT_COLUMNHEAD_KEY": {
+    "PracticeLocation": "TaxId",
+    "ProviderDemographics": "NPI",
+    "ProviderSanction": "RegistrationNumber",
+    "ProviderSpeciality": "TaxonomyCode",
+    "ProviderLicense": "LicenseNumber",
+    "ProviderDEALicense": "LicenseNumber",
+    "ProviderLicenseStatusLog": "LicenseNumber",
+    "AffiliationLine": "TaxId",
+    "AffiliationLineFeeSchedule": "TaxId",
+    "ProviderOtherIdType": "OtherIdType"
+  },
+  "API": {
+    "CALL_API": "FALSE",
+    "API_URL": "http://localhost:31529/api/IExchange/IExchangeApiCall"
+  },
+  "SqlServerConnections": {
+    "Server": "HP-PC\\MSSQLSERVER2019",
+    "Database": "ST-E1-DEV",
+    "User": "sa",
+    "Password": "123456",
+    "Trusted_Connection": "No",
+    "Server1": "192.168.2.145",
+    "Database1": "ST-E1-DEV",
+    "User1": "msb",
+    "Password1": "123456",
+    "Trusted_Connection1": "No"
+
+  },
+  "MongoConnections": {
+    "Client": "mongodb://localhost:27017",
+    "Database": "ST-E1-JSON-DEV",
+    "Client1": "mongodb://192.168.2.145:27017",
+    "Databas1e": "ST-E1-JSON-DEV"
+  }
+
+}

@@ -1,0 +1,77 @@
+{
+  "AppInfo": {
+    "NAME": "iExchange"
+  },
+  "DEFAULT": {
+    "INPUTFILENAME1": "inputUCDFWF1.txt",
+    "INPUTFILETYPE1": "FWF",
+    "INPUTFILENAME2": "inputSamplePIPE.csv",
+    "INPUTFILETYPE2": "CSV",
+    "INPUTFILENAME3": "inputSampleCSV.txt",
+    "INPUTFILETYPE3": "CSV",
+    "INPUTFILENAME": "inputSamplePIPE.csv",
+    "INPUTFILETYPE": "CSV",
+    "DELIMITER": "|",
+    "DATAFOLDER": "iexchange_data",
+    "CHUNK_SIZE": 500,
+    "SECRET_KEY": "secret-key-of-myapp",
+    "ADMIN_NAME": "administrator",
+    "AWS_DEFAULT_REGION": "ap-northeast-2",
+    "MAX_IMAGE_SIZE": 5242880,
+    "USE_RULECONFIG_FOR_MAPPING": "TRUE",
+    "RESET_MAPPINGS_DB": "FALSE",
+    "SUMMARY_LOGGING_ONLY": "TRUE",
+    "UPDATE_FINALOUTPUT_IN_DB": "FALSE",
+    "UPDATE_LOG_IN_DB": "FALSE",
+    "WRITE_FOUTPUT_JSON": "TRUE"
+  },
+  "API": {
+    "CALL_API": "FALSE",
+    "API_URL": "http://localhost:31529/api/IExchange/IExchangeApiCall",
+    "IX_CACHE_INIT": "http://localhost:31529/api/IExchange/IExchangeApiCallCacheInit"
+
+  },
+  "OUTPUT_COLUMNHEAD_KEY": {
+    "Practice": "TaxID",
+    "PracticeLocation": "TaxID",
+    "ProviderDemographics": "NPI",
+    "ProviderAlias": "FirstName",
+    "ProviderSpeciality": "TaxonomyCode",
+    "ProviderLicense": "LicenseNumber",
+    "ProviderLicenseStatusLog": "LicenseNumber",
+    "ProviderAppointmentAssociation": "Association",
+    "ProviderCertification": "CertificationNo",
+    "ProviderCMECredit": "CMECreditCategoryName",
+    "ProviderCoveringCollaborating": "SpecialtyTaxonomyCode",
+    "ProviderEducationTraining": "Degree",
+    "ProviderHealth": "HealthType",
+    "ProviderHospitalPrivelege": "HospitalName",
+    "ProviderLanguages": "LanguageCode",
+    "ProviderMalPractice": "PrimaryInsuranceCarrier",
+    "ProviderOtherIdType": "OtherIdNumber",
+    "ProviderPractice": "TaxID",
+    "ProviderPracticeLocation": "TaxID",
+    "ProviderContractLine": "TaxID",
+    "ContractLineFeeSchedule": "TaxID",
+    "ProviderProfessionalLiability": "PolicyNumber",
+    "ProviderReference": "LastName",
+    "ProviderSubNpi": "SubNpi",
+    "SubNetworkPractice": "TaxID",
+    "ProviderEmploymentHistory": "EmployerName"
+  },
+  "TEST": {
+    "TEST_TMP_DIR": "tests",
+    "TEST_TIMEOUT": 20
+  },
+  "CI": {
+    "SERVICE": "travis-ci",
+    "HOOK_URL": "web-hooking-url-from-ci-service"
+  },
+  "MongoConnections": {
+    "Client1": "mongodb://localhost:27017",
+    "Database1": "JsonDB",
+    "Client": "mongodb://192.168.2.145:27017",
+    "Database": "ST-E1-JSON-DEV"
+  }
+
+}
